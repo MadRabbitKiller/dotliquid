@@ -588,7 +588,7 @@ namespace DotLiquid
 
         private static object DoMathsOperation(object input, object operand, Func<Expression, Expression, BinaryExpression> operation)
         {
-            if (input is int)
+            if (input is int && operand is int)
                 return DoMathsOperation((int)input, (int)operand, operation);
             return input == null || operand == null
                 ? null
