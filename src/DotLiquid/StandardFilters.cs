@@ -8,7 +8,6 @@ using System.Net;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text.RegularExpressions;
-using DotLiquid.Exceptions;
 #if NET35
 using System.Web;
 #endif
@@ -602,7 +601,7 @@ namespace DotLiquid
             Func<Expression, Expression, BinaryExpression> operation)
         {
             if (!((object)input).IsNumeric() || !((object)operand).IsNumeric())
-                throw new System.ArgumentException();
+                throw new ArgumentException();
 
             if (operation == Expression.Add)
                 return input + operand;
@@ -637,8 +636,7 @@ namespace DotLiquid
                    || value is uint
                    || value is ulong
                    || value is float
-                   || value is double
-                   || value is decimal;
+                   || value is double;
         }
     }
 }
