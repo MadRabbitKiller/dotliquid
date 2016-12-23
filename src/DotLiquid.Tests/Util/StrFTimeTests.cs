@@ -1,12 +1,10 @@
-﻿using System;
-using System.Globalization;
-using System.Threading;
-using DotLiquid.Util;
+﻿using DotLiquid.Util;
 using NUnit.Framework;
+using System;
 
 namespace DotLiquid.Tests.Util
 {
-	[TestFixture]
+    [TestFixture]
 	public class StrFTimeTests
 	{
 		[SetCulture("en-GB")]

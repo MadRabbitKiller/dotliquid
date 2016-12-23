@@ -3,11 +3,11 @@ using System.Linq.Expressions;
 
 namespace DotLiquid.Util
 {
-	/// <summary>
-	/// Some of this code was taken from http://www.yoda.arachsys.com/csharp/miscutil/usage/genericoperators.html.
-	/// General purpose Expression utilities
-	/// </summary>
-	public static class ExpressionUtility
+    /// <summary>
+    /// Some of this code was taken from http://www.yoda.arachsys.com/csharp/miscutil/usage/genericoperators.html.
+    /// General purpose Expression utilities
+    /// </summary>
+    public static class ExpressionUtility
 	{
 		/// <summary>
 		/// Create a function delegate representing a binary operation
